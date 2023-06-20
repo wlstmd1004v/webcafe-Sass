@@ -4,16 +4,17 @@
 .appHeader {
   background: yellow;
   padding: rem(16px) rem(20px);
+  @include flexbox(column);
+  gap: rem(16px);
 
   @include mobile {
     background: $dark-brown;
     color: $white;
-
-    @include flexbox(column);
   }
 
   @include desktop {
     position: relative;
+    @include containerMax;
   }
 }
 
@@ -34,7 +35,6 @@
 
 // 멤버 서비스
 .memberOnly {
-  background: green;
   @include flexbox($justify: flex-end);
 
   @include mobile {
@@ -57,7 +57,7 @@
 
     @include desktop {
       .formInput {
-        width: rem(460px);
+        width: rem(400px);
       }
     }
   }
