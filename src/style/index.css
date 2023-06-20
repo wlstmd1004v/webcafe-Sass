@@ -375,6 +375,10 @@ legend {
   .appHeader {
     background: #38302e;
     color: #ffffff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
   }
 }
 
@@ -394,6 +398,11 @@ legend {
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: stretch;
+}
+@media (max-width: 767px) {
+  .memberOnly {
+    order: -1;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
