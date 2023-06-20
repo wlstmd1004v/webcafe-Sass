@@ -45,8 +45,9 @@
 // 검색 폼
 .searchForm {
   &__group {
-    background: blue;
+    /* background: blue; */
     @include flexbox($justify: flex-end);
+    gap: rem(16px);
 
     @include mobile {
       .formInput {
