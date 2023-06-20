@@ -1,1 +1,88 @@
-// mixin.scss
+@use "./../utils/unit" as *;
+
+// 포지션 관련 믹스인 ???
+
+@mixin pos {
+  position: absolute;
+}
+
+@mixin posLeftTop($l: 0, $t: 0) {
+  @include pos;
+  top: $t;
+  left: $l;
+}
+
+@mixin posRightTop($r: 0, $t: 0) {
+  @include pos;
+  top: $t;
+  right: $r;
+}
+
+@mixin posCenterX {
+  @include pos;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin posBottomY {
+  @include pos;
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+@mixin posCenterY {
+  @include pos;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin posCenter {
+  @include pos;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin containerMax($max-width: 1024px) {
+  max-width: rem($max-width);
+  @include autoMargin;
+}
+
+@mixin padding($spacing) {
+  @include paddingX;
+  @include paddingY;
+}
+
+@mixin paddingX($spacing) {
+  padding-left: rem($spacing);
+  padding-right: rem($spacing);
+}
+
+@mixin paddingY($spacing) {
+  padding-top: rem($spacing);
+  padding-bottom: rem($spacing);
+}
+
+@mixin padding($spacing) {
+  padding: rem($spacing);
+}
+
+@mixin marginX($spacing) {
+  margin-left: rem($spacing);
+  margin-right: rem($spacing);
+}
+
+@mixin marginY($spacing) {
+  margin-top: rem($spacing);
+  margin-bottom: rem($spacing);
+}
+
+@mixin margin($spacing) {
+  @include marginX;
+  @include marginY;
+}
+
+@mixin autoMargin {
+  margin-left: auto;
+  margin-right: auto;
+}
