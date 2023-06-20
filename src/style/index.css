@@ -381,6 +381,11 @@ legend {
     align-items: stretch;
   }
 }
+@media (min-width: 768px) {
+  .appHeader {
+    position: relative;
+  }
+}
 
 .logo {
   width: 12.75rem;
@@ -390,6 +395,11 @@ legend {
   display: block;
   height: 100%;
   background: url(/assets/images/webcafe-logo.png);
+}
+@media (min-width: 768px) {
+  .logo {
+    position: absolute;
+  }
 }
 
 .memberOnly {
@@ -403,6 +413,11 @@ legend {
   .memberOnly {
     order: -1;
   }
+}
+
+.searchForm__group {
+  text-align: right;
+  background: blue;
 }
 
 /*# sourceMappingURL=index.css.map */
