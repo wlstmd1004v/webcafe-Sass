@@ -1,4 +1,5 @@
 @use "./../utils" as *;
+@use "./../components" as *;
 
 .appHeader {
   background: yellow;
@@ -47,8 +48,16 @@
     background: blue;
     @include flexbox($justify: flex-end);
 
-    .formInput__input {
-      width: rem(460px);
+    @include mobile {
+      .formInput {
+        flex-grow: 1;
+      }
+    }
+
+    @include desktop {
+      .formInput {
+        width: rem(460px);
+      }
     }
   }
 }

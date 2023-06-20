@@ -367,6 +367,17 @@ legend {
   margin: -1px;
 }
 
+.formInput__input {
+  appearance: none;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #767676;
+  background: #ffffff;
+  font-size: 0.875rem;
+}
+
 .appHeader {
   background: yellow;
   padding: 1rem 1.25rem;
@@ -424,8 +435,15 @@ legend {
   justify-content: flex-end;
   align-items: stretch;
 }
-.searchForm__group .formInput__input {
-  width: 28.75rem;
+@media (max-width: 767px) {
+  .searchForm__group .formInput {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 768px) {
+  .searchForm__group .formInput {
+    width: 28.75rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
