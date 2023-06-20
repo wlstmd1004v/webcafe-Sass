@@ -378,6 +378,10 @@ iframe {
 
 .memberOnly {
   background: green;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: stretch;
 }
 
 /*# sourceMappingURL=index.css.map */
