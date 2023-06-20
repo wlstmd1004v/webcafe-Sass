@@ -15,13 +15,19 @@
 @mixin posRightTop($r: 0, $t: 0) {
   @include pos;
   top: $t;
-  right: $l;
+  right: $r;
 }
 
 @mixin posCenterX {
   @include pos;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@mixin posBottomY {
+  @include pos;
+  top: 100%;
+  transform: translateY(-100%);
 }
 
 @mixin posCenterY {
