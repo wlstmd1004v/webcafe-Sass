@@ -1,38 +1,11 @@
+// navigation.scss
 @use "./../utils" as *;
 
 // 메인 내비게이션
 .menu {
-  @include mobile {
-    &__list {
-      background: $accent-opacity-color;
-      width: 70vw;
-      height: 100vh;
-      position: fixed;
-      left: 0;
-      top: 0;
-      @include padding(20px);
+    
+    @include desktop {
+        
     }
-
-    &__item {
-      border-bottom: 1px solid $black;
-    }
-  }
-
-  @include desktop {
-    background: $brown;
-    @at-root .menu__list {
-      @include flexbox($justify: space-between);
-      @include containerMax;
-      @include paddingX(4px);
-      @include paddingY(16px);
-      color: $white;
-      font-size: rem(18px);
-      font-weight: 700;
-    }
-  }
-
-  &__link {
-    display: block;
-    @include padding(16px);
-  }
 }
+
