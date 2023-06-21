@@ -84,4 +84,8 @@ $break: 768px;
   @if $media != "mobile" and $media != "desktop" {
     @error '미디어 유형이 유효하지 않습니다.';
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> teacher
